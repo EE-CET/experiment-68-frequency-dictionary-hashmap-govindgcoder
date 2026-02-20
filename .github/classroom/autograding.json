@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Test 1 - Example Case",
+      "setup": "javac src/Solution.java",
+      "run": "java -cp src Solution",
+      "input": "hello world hello java",
+      "output": "(?=.*hello: 2)(?=.*world: 1)(?=.*java: 1)",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "Test 2 - Multiple Duplicates",
+      "setup": "javac src/Solution.java",
+      "run": "java -cp src Solution",
+      "input": "apple banana apple orange banana apple",
+      "output": "(?=.*apple: 3)(?=.*banana: 2)(?=.*orange: 1)",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 50
+    }
+  ]
+}
