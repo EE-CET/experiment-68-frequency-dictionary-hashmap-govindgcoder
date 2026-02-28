@@ -25,6 +25,7 @@ public class Solution {
         // Format: "word: count"
         for(Map.Entry<String, Integer> entry : wordCount.entrySet()){
           System.out.println(entry.getKey()+": "+entry.getValue());
+          System.out.flush();
         }
         
     }
